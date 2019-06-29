@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "UTF-8">
+<title>Register</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+</head>
+
+
+    <body class="container-fluid">
+    <nav class="navbar zin bg-dark navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;home</a>
+              <li class="nav-item">
+                <a class= "nav-link" href="register.html" data-toggle="modal" data-target="#myModal"><i class="fas fa-registered" aria-hidden="true"></i>&nbsp;register</a>
+              </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#about" id="navbardrop" data-toggle="dropdown"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;about</a>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="history.html">History</a>
+                  <a class="dropdown-item" href="preamble.html">Constitution</a>
+                  <a class="dropdown-item" href="executives.html">Execitives</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news"><i class="far fa-newspaper" aria-hidden="true"></i>&nbsp;news</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;contact us</a>
+            </li>  
+          </ul>
+        </div>  
+      </nav>
+      <br>
+       
+      <div class="jumbotron herorra-nature">
+          <h1 class="hero-title">Membership <br> Registeration </h1>
+          <p>....</p>
+           <p> <a href="#">Learn more</a></p>
+      </div>
+      
+     
+    <div class="container">
+        <legend><h1>Join the Semper Fidelis Family today:</h1></legend><br>
+        <form action="action-page.php" autocomplete="on" class="needs-validated" novalidate>
+        
+        <div class="form-group">
+        <label for="Fname">First name</label><br>
+        <input type= "fname" class="form-control" id="fname" placeholder=
+        "Enter firstname" name="fname" required><br>
+            <div class="valid-feedback">Valid.</div>
+             <div class="invalid-feedback">Please fill out this field.</div>
+        <br>
+         </div>
+        
+        <div class="form-group">
+        <br><label for="lname">Last name</label><br>
+        <input type= "lname" class="form-control" placeholder="Enter Lastname" id="lname" name="lname" required ><br>
+        <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <br>
+        
+        <div class="form group">
+        <br><label for="dbirth">Date of Birth (date and time)</label>:<br>
+          <input type="datetime-local" id="bday" class="form-control" placeholder="Enter Date of Birth"  name="bdaytime"><br>
+        <br>
+        </div>
+
+        <label for="email">E-mail</label><br>
+        <input type= "email" id="email" name="email" class="form-control" placeholder="Enter Date of Birth" required><br>
+        <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <br>
+        <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember" required> I agree on the terms and conditions of this organisation.
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Check this checkbox to continue.</div>
+        </label>
+        </div>
+        
+        <button type="sumbit" class="btn btn-primary">Submit</button><br>
+        </form>
+        <br>
+           <footer>
+            <p>Copyright © 2019 Semper '09 Alumni Assoc. - All rights reserved. | Developed by Tenica</p>
+           </footer>
+             
+        </div>
+
+
+        <script>
+            // Disable form submissions if there are invalid fields
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+
+        </body>
+        </html>
+        
+        
+
+
+
